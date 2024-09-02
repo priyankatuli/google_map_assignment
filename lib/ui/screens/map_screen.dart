@@ -57,8 +57,8 @@ class _MapScreenState extends State<MapScreen> {
   }
 
   void dispose(){
-    super.dispose();
     _googleMapController?.dispose();
+    super.dispose();
   }
 
 
