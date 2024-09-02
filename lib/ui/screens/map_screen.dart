@@ -34,7 +34,7 @@ class _MapScreenState extends State<MapScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Google Map'),
+          title: const Text('Real-Time Location Tracker'),
         ),
         body: GoogleMap(
           initialCameraPosition: CameraPosition(
