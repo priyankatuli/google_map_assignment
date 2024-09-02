@@ -56,11 +56,6 @@ class _MapScreenState extends State<MapScreen> {
 
   }
 
-  void dispose(){
-    _googleMapController?.dispose();
-    super.dispose();
-  }
-
 
   Future<void> _requestLocationPermission() async {
     //check location permission
@@ -152,6 +147,11 @@ class _MapScreenState extends State<MapScreen> {
         _updateMarker(position);
     });
 
+  }
+
+  void dispose(){
+    _googleMapController?.dispose();
+    super.dispose();
   }
 
 }
